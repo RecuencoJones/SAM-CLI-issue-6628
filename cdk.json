@@ -1,0 +1,4 @@
+{
+  "app": "ts-node cdk/app.ts",
+  "quiet": true
+}

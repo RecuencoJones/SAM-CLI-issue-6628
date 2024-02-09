@@ -1,0 +1,22 @@
+{
+  "name": "sam-cli-issue-6628",
+  "private": true,
+  "scripts": {
+    "start": "npm run synth && npm run sam:build && npm run sam:local",
+    "compile": "tsc --noEmit",
+    "synth": "cdk synth",
+    "sam:build": "sam build -t ./cdk.out/app.template.json --manifest package.json",
+    "sam:local": "sam local start-api -p 8080"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.133",
+    "@types/js-yaml": "4.0.9",
+    "aws-cdk": "2.126.0",
+    "aws-cdk-lib": "2.126.0",
+    "aws-lambda": "1.0.7",
+    "esbuild": "0.20.0",
+    "js-yaml": "4.1.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  }
+}
